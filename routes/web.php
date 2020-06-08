@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Pizza;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +19,9 @@ Route::get('/', function () {
 
 // Pizza Routes
 Route::get('/pizzas', 'PizzaController@index');
+
+Route::get('/pizzas/create', 'PizzaController@create');
+
 Route::get('/pizzas/{id}', 'PizzaController@show');
+
+// end Pizza Routes
